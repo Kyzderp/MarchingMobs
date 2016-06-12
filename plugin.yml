@@ -1,0 +1,18 @@
+name: MarchingMobs
+main: io.github.kyzderp.marchingmobs.MarchingMobs
+version: 1.0.2
+
+commands:
+  march:
+    description: Spawns a marching mob.
+    usage: /<command> cow <x> <y> <z> <yaw> <pitch> <speed>
+    permission: marchingmobs.spawn
+    permission-message: You do not have permission to do this!
+
+permissions:
+  marchingmobs.*:
+    description: Permissions for all!
+    children:
+      marchingmobs.spawn:
+        description: Can spawn marching mobs.
+        default: false
